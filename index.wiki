@@ -1,0 +1,17 @@
+# Beginwiki
+
+[[vim]]
+[[i3]]
+[[tmux]]
+[[terminal]]
+[[arch]]
+
+- https://google.com
+
+[[computer]]
+
+[[stream]]
+
+---
+
+[[meta]]

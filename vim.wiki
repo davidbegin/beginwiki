@@ -1,0 +1,63 @@
+# Begin's Vim Settings
+
+## Shortcuts
+
+Shortcuts should be plentiful and their life can be short.
+
+### Disabling Things
+
+Disable the evil arrow keys. They might feel good in the beginning but they are
+a crutch!
+
+```vim
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+imap <up> <nop>
+imap <down> <nop>
+imap <left> <nop>
+imap <right> <nop>
+```
+
+### TODO Comment
+
+```vim
+:nnoremap <leader>h1 :call <SID>MdTitle('=')<cr>
+:nnoremap <leader>h2 :call <SID>MdTitle('-')<cr>
+
+noremap <leader>ll <cr>i# =============================================================================<cr>
+noremap <leader>hh <cr>i===<cr>
+noremap <leader>s 1z=
+nmap <S-Enter> O<Esc>
+nmap <CR> o<Esc>
+noremap <leader>e :edit %:h<cr>
+noremap <leader>gg :Goyo<cr>
+noremap <leader>pp :set paste<cr>
+noremap <leader>pk :set nopaste<cr>
+noremap <leader>bb <cr>ibreakpoint()<cr>
+noremap <leader>fo <cr>i@pytest.mark.focus<cr><Esc>
+" noremap <leader>rc :source ~/.config/nvim/init.vim<cr>
+noremap <leader>rc :so ~/.config/nvim/init.vim<cr>
+noremap ,p :w!\|!python3 -m pytest -s %:p<cr>
+" noremap ,p :w!\|!python3 -m pytest --capture=sys %:p<cr>
+noremap ,f :w!\|!python3 -m pytest %:p -m focus<cr>
+noremap ,t :w!\|!python %:p<cr>
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+noremap ,, <esc>:w!<cr>
+noremap <leader>ag :Ag
+noremap <leader>tt  :Tabularize/
+noremap ff :resize 100 <cr> <bar> :vertical resize 220<cr>
+noremap fm <C-w>=
+noremap <leader>ff :FixWhitespace<cr>
+inoremap <silent><expr> <Tab>
+xmap <leader>a  <Plug>(coc-codeaction-selected)
+nmap <leader>a  <Plug>(coc-codeaction-selected)
+" Remap keys for applying codeAction to the current line.
+nmap <leader>ac  <Plug>(coc-codeaction)
+nmap <leader>qf  <Plug>(coc-fix-current)
+:nnoremap <leader>ll :call <SID>MdLink()<cr>
+```

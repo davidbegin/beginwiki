@@ -1,0 +1,18 @@
+# Begin's I3 Setup
+
+## Accessing the I3 Config
+
+[~/.config/i3/config](status bar)
+[~/.config/i3blocks/config](status bar)
+
+bindsym $mod+d			exec --no-startup-id dmenu_run
+
+Where is dmenu run?
+
+begin ~/vimwiki$ which dmenu_run
+/usr/local/bin/dmenu_run
+
+
+Contains the Status Bar: `~/.config/i3/config`
+
+## Restarting I3

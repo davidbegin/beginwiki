@@ -1,0 +1,6 @@
+# Meta
+
+```bash
+cat ~/.config/nvim/init.vim | grep map >> vim.md
+```
+
